@@ -1,73 +1,174 @@
-<!doctype.html
+<!doctype HTML> 
+    <html>
+        <head>
+           <style>
+                body {
+                background-image: url("sunshine-clouds-sky-during-morning-background-blue-white-pastel-heaven-soft-focus-lens-flare-sunlight-abstract-blurred-cyan-gradient-of-peaceful-nature-open-view-out-windows-beautiful-summer-spring_1253-1093.jpg");
+                background-size: cover;
+                }
+                    
+            
+            </style> 
+            <title>Homework & Study Schedule</title> 
+            <script src="jquery-3.3.1.min.js"> </script>
+        </head> 
+            
+         <h1 style="font-family:Georgia"> 
+             <center> Homework & Study Schedule</center>
+         </h1>
+       <center>
+         <form id="myForm">              
+            <table> 
+                <thead>
+                    <tr>
+                        <th style="font-family: Georgia">Subject</th>
+                        <th style="font-family:Georgia">Time Span</th>     
+                    </tr> 
+                </thead>
+                    <tr>
+                    <td> <input type="text"> </td>
+                     <td> <input type="text" id="time1"> </td>
+                    </tr>
+                    <tr>
+                    <td> <input type="text"> </td>
+                     <td> <input type="text" 
+                     id="time2"> </td>
+                    </tr>
+                    <tr>
+                    <td> <input type="text"> </td>
+                     <td> <input type="text"
+                     id="time3"> </td>
+                    </tr>
+                    <tr>
+                    <td> <input type="text"> </td>
+                     <td> <input type="text"
+                     id="time4"> </td>
+                    </tr>
+                    <tr>
+                    <td> <input type="text"> </td>
+                     <td> <input type="text"
+                        id="time5"> </td>
+                    </tr>
+                    <tr>
+                    <td> <input type="text"> </td>
+                     <td> <input type="text"
+                        id="time6"> </td>
+                    </tr>
+             </table>
+                
+        </form>
+                <center><p> <input type="submit" value="Submit" onclick="buttonSubmit()"></p></center>
+                
 
-<style>
-<style>
+           
+           <center> 
+               <p style="font-family:Georgia"> Instructions: <br/> </p>
+                   <p style="font-family:Georgia">
+                   Put in the subject which you want to study or do homework for. In the time span, put the time that you want to spend on the subject in seconds. </p>
+               
+           </center>
 
-.anna {
-	background-color: steelblue;
-	color: white;
-	display: inline-block;
-	padding-left: 16px;
-	padding-right: 16px;
-<!--padding in multiples of four to get it to align on design grid-->
-}
+    </body>
+        
+    <script> 
+    
+        function buttonSubmit() {
+            timer = setInterval(test, 1000);
+            var audio = new Audio("siren.mp3")
 
-.center {
-	width: 16 px;
-	margin: 0 auto;
-}
+            function test() {
+                var time1 = document.getElementById("time1");
+                if (time1.value === '0') {
+                    clearInterval(timer);
+                   audio.play()
+            alert("Time's up! Move on to the next subject.");
+                    audio.pause();
+                timer2 = setInterval(test2, 1000);
 
-.entry {
-	margin-bottom: 4px;
-}
+                } else if (time1.value > 0) {
+                    time1.value = time1.value - 1;
+                }
+            console.log(time1.value);     
+                
+            }
+        function test2() { 
+            var time2 = document.getElementById("time2");
+                if (time2.value === '0') {
+                    clearInterval(timer2);
+                    audio.play()
+            alert("Time's up! Move on to the next subject.");
+                    audio.pause();
 
-.header {
-	font-size: 
-}
-</style>
+                    timer3 = setInterval(test3, 1000);
+                    } else if (time2.value > 0) {
+                    time2.value = time2.value - 1;
+                    }
+        
+            }
+            
+                
+        
+        function test3() { 
+            var time3 = document.getElementById("time3");
+                if (time3.value === '0') {
+                    clearInterval(timer3);
+                    audio.play()
+            alert("Time's up! Move on to the next subject.");
+                        audio.pause();
 
-<head>
-</head>
+                    timer4 = setInterval(test4, 1000);
+                    } else if (time3.value > 0) {
+                    time3.value = time3.value - 1;
+                    }
+        
+            }
+            
+            
+             function test4() { 
+            var time4 = document.getElementById("time4");
+                if (time4.value === '0') {
+                    clearInterval(timer4);
+                    audio.play()
+            alert("Time's up! Move on to the next subject.");
+                        audio.pause();
 
-<tab>tab1</tab>
+                    timer5 = setInterval(test5, 1000);
+                    } else if (time4.value > 0) {
+                    time4.value = time4.value - 1;
+                    }
+        
+            }
+            
+             function test5() { 
+            var time5 = document.getElementById("time5");
+                if (time5.value === '0') {
+                    clearInterval(timer5);
+                    audio.play()
+            alert("Time's up! Move on to the next subject.");
+                        audio.pause();
 
-
-
-
-* {
-	fo
-
-
-<div class="center">
-<h1 class="anna">Christie's Blog</h1>
-<!--use class not id, id is very specific-->
-
-<div class="entry" style="
-	margin-bottom:0px;>"
-<div>My cool food adventure</div>
-
-<div> it tasted so good</div>
-
-<div>My favorite books</div>
-
-<ul>
-	<li>Pride and Prejudice</li>
-	<li>Becoming Dr. Q</li>
-
-<div
-<body>
-<p>ajkshdfalkjshdbfalkjsedhf</p>
-</body>
-
-<a href="http://www.google.com"
-target="_blank">myfav</a>
-</div>
-</div>
-
-<!--my comment comes here-->
-<script>
-	console.log(' I dont always write perfect code')
-</script>
-
-<img scr="
+                    timer6 = setInterval(test6, 1000);
+                    } else if (time5.value > 0) {
+                    time5.value = time5.value - 1;
+                    }
+        
+            }
+            
+             function test6() { 
+            var time6 = document.getElementById("time6");
+                if (time6.value === '0') {
+                    clearInterval(timer6);
+                    audio.play()
+            alert("Time's up! Move on to the next subject.");
+                    audio.pause()
+                    } else if (time6.value > 0) {
+                    time6.value = time6.value - 1;
+                    }
+        
+            }
+        
+        }
+        
+    </script>
+    </html>
 
